@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Random News</h1>
+    {% for i in articles %}
+        <h1>{{i.title}}</h1>
+        <p>{{i.description}}</p>
+        <img src="{{i.urlToImage}}" width="200px" height="200px" alt="news_1">
+        <textarea name="" id="" cols="30" rows="10">{{i.content}}</textarea>
+    {% endfor %}
+</body>
+</html>
